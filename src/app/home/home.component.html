@@ -1,0 +1,124 @@
+<div class="wrapper">
+    <!-- Sidebar Holder -->
+    <nav id="sidebar">
+        <div class="sidebar-header center">
+            <img src="../assets/image/logoPMS (2).png" alt="">
+
+        </div>
+
+        <ul class="list-unstyled components">
+            <li>
+                <a class="nav-link center" href="#">
+                    <img src="../assets/image/i_NewReservation.png"  alt="" >
+                    <div class="font-menu">New Reservation</div>
+                </a>
+            </li>
+            <li>
+                <a class="nav-link center" href="#">
+                    <img src="../assets/image/i_UpdateReservation.png"  alt="" >
+                    <div class="font-menu">Update Reservation</div>
+                </a>
+            </li>
+            <li>
+                <a class="nav-link center" href="#">
+                    <img src="../assets/image/i_block.png"  alt="" >
+                    <div class="font-menu">Blocks</div>
+                </a>
+            </li>
+            <li>
+                <a class="nav-link center" href="#">
+                    <img src="../assets/image/i_roomplan.png"  alt="" >
+                    <div class="font-menu">Room Plan</div>
+                </a>
+            </li>
+            <li>
+                <a class="nav-link center" href="#">
+                    <img src="../assets/image/i_floorplan.png"  alt="" >
+                    <div class="font-menu">Floor Plan</div>
+                </a>
+            </li>
+            <li>
+                <a class="nav-link center" href="#">
+                    <img src="../assets/image/i_registercode.png"  alt="" >
+                    <div class="font-menu">Register Code</div>
+                </a>
+            </li>
+            <li>
+                <a class="nav-link center" href="#">
+                    <img src="../assets/image/i_calender.png"  alt="" >
+                    <div class="font-menu">Calender</div>
+                </a>
+            </li>
+        </ul>
+
+
+    </nav>
+
+    <!-- Page Content Holder -->
+    <div id="content">
+        <nav class="navbar navbar-expand-lg">
+            <a id="sidebarCollapse" class="navbar-brand padding-menu"><span class="oi oi-menu"></span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebar" aria-controls="sidebar" aria-expanded="false"
+                aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto ">
+                    <li class="nav-item active padding-menu">
+                        <a class="nav-link center" routerLink="/reservation" href="#"> 
+                  <img src="../assets/image/i_reservation.png" alt="" >
+                     <div class="font-menu1">Reservation</div>
+                   <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item padding-menu">
+                        <a class="nav-link center" href="#">
+                     <img src="../assets/image/i_fontdesk.png"  alt="">
+                     <div class="font-menu1">Front Desk</div>
+                 </a>
+                    </li>
+                    <li class="nav-item padding-menu">
+                        <a class="nav-link center" href="#">
+                   <img src="../assets/image/i_cashiering.png"  alt="" >
+                   <div class="font-menu1">Cashiering</div>
+               </a>
+                    </li>
+                    <li class="nav-item padding-menu">
+                        <a class="nav-link center" href="#">
+                   <img src="../assets/image/i_roommanagement.png"  alt="" >
+                   <div class="font-menu1">Room Management</div>
+               </a>
+                    </li>
+                    <li class="nav-item padding-menu">
+                        <a class="nav-link center" href="#">
+                   <img src="../assets/image/i_AR.png"  alt="" >
+                   <div class="font-menu1">AR</div>
+               </a>
+                    </li>
+                    <li class="nav-item padding-menu">
+                        <a class="nav-link center" href="#">
+                   <img src="../assets/image/i_Commission.png"  alt="" >
+                   <div class="font-menu1">Commissions</div>
+               </a>
+                    </li>
+                    <li class="nav-item padding-menu">
+                        <a class="nav-link center" href="#">
+                   <img src="../assets/image/i_EndofDay.png"  alt="" >
+                   <div class="font-menu1">End of Day</div>
+               </a>
+                    </li>
+                    <li class="nav-item padding-menu">
+                        <a class="nav-link center" href="#">
+                   <img src="../assets/image/i_Exit.png"  alt="" >
+                   <div class="font-menu1">Exit</div>
+               </a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <router-outlet></router-outlet>
+        
+    </div>
+    </div>

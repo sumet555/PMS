@@ -1,0 +1,135 @@
+/* You can add global styles to this file, and also import other style files */
+
+.btn-bule{
+    background-color: #1976d2;
+    color: #ffffff;
+    font-size: 16px;
+}
+.btn-gray{
+    background-color: #7f7f7f;
+    color: #ffffff;
+    font-size: 16px;
+}
+.btn-white{
+    background-color: #ffffff;
+    color: #42639b;
+    font-weight: bold;
+}
+.btn-checked-out{
+    background-color: #de0808;
+    color: #ffffff;
+}
+.btn-checked-in{
+    background-color: #7bb62f;
+    color: #ffffff;
+}
+.btn-due-out{
+    background-color: #737373;
+    color: #ffffff;
+}
+.row{
+    width: 100%;
+    font-family: 'Prompt', sans-serif;
+}
+.navbar, .col{
+    font-family: 'Prompt', sans-serif;
+}
+.card{
+   width: 100%;
+   margin: 12px;
+}
+.card-body{
+    width: 100%;
+}
+div .card{
+    border: 1px solid #d2dae8;
+    background-color: white;
+}
+.card-title{
+    font-size: 20px;
+    color: #293b5a;
+}
+th{
+    color: 	#293b5a;
+}
+.form-control{
+    /* margin-top: 3px; */
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #595959;
+}
+input.form-control{
+    border: 1px solid #d2dae8;
+}
+select#inputState.form-control{
+    border: 1px solid #d2dae8;
+}
+/* tbody{
+    border-top: 1px solid #d2dae8;
+} */
+.text-cash{
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #595959;
+    text-align: right;
+}
+label, .label{
+    text-align: right;
+    color: 	#42639b;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 6px;
+    /* margin-bottom: 3px; */
+}
+.Tile{
+    font-size: 26px;
+    color: #293b5a;
+    padding: 0px;
+    margin: 0px;
+    font-weight: bold;
+}
+.Sub-Title{
+    font-size: 14px;
+    color: #97abcd;
+    padding: 0px;
+    margin: 0px;
+}
+.nav-left{
+    width: 100px;
+    height: 100vh;
+    font-size: 12px;
+    text-align: center;
+    background-color: #4e6790;
+    
+}
+.navbar{
+    height: 83px;
+  
+}
+.navbar-brand{
+    /* background-color: #4e6790; */
+    width: 68px;
+}
+.nav-link{
+    /* border: 1px solid gray; */
+    color: #f7f7f7;
+}
+.test{
+    background-color: gray;
+}
+.test2{
+    background-color: rgb(143, 34, 34);
+}
+.test3{
+    background-color: rgb(230, 174, 174);
+}
+
+.pd{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    /* padding-bottom: 15px !important; */
+}
+.img-icon{
+    padding-top: 7px;
+
+}
