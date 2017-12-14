@@ -1,3 +1,4 @@
+
 <div class="col">
     <label class="Tile">Reservation</label>
     <br>
@@ -13,13 +14,13 @@
             <h4 class="card-title">Search</h4>
             <div class="row">
               <label class="col-sm-3">Name</label>
-              <div class="col-sm-8">
+              <div class="col-sm-9">
                 <input type="text" class="form-control" placeholder="" value="Johny">
               </div>
             </div>
             <div class="row">
               <label class="col-sm-3">First Name</label>
-              <div class="col-sm-8">
+              <div class="col-sm-9">
                 <input type="text" class="form-control" placeholder="" value="">
               </div>
             </div>
@@ -31,7 +32,7 @@
                   <option>...</option>
                 </select>
               </div>
-              <div class="col-12 col-sm-1">
+              <div class="col-12 col-sm-2">
                 <label>Type</label>
               </div>
               <div class="col-12 col-sm-3">
@@ -43,31 +44,31 @@
             </div>
             <div class="row">
               <label class="col-sm-3">ConfifiCxl No.</label>
-              <div class="col-sm-8">
+              <div class="col-sm-9">
                 <input type="text" class="form-control" placeholder="" value="">
               </div>
             </div>
             <div class="row">
               <label class="col-sm-3">Stay On</label>
-              <div class="col-sm-8">
+              <div class="col-sm-9">
                 <input type="text" class="form-control" placeholder="" value="">
               </div>
             </div>
             <div class="row">
               <label class="col-sm-3">Company</label>
-              <div class="col-sm-8">
+              <div class="col-sm-9">
                 <input type="text" class="form-control" placeholder="" value="">
               </div>
             </div>
             <div class="row">
               <label class="col-sm-3">Agent</label>
-              <div class="col-sm-8">
+              <div class="col-sm-9">
                 <input type="text" class="form-control" placeholder="" value="">
               </div>
             </div>
             <div class="row">
               <label class="col-sm-3">Block Code</label>
-              <div class="col-sm-8">
+              <div class="col-sm-9">
                 <select id="inputState" class="form-control">
                   <option></option>
                   <option>...</option>
@@ -300,10 +301,10 @@
                   </div>
                 </div>
                 <div class="row">
-                  <label class="col-sm-4">Zipcode/State/Country</label>
-                  <div class="col-sm-8">
+                  <label class="col-sm-5">Zipcode/State/Country</label>
+                  <div class="col-sm-7">
                     <div class="form-row">
-                      <div class="col-6">
+                      <div class="col-5">
                         <input type="text" class="form-control" placeholder="" value="41403">
                       </div>
                       <div class="col">
@@ -392,7 +393,9 @@
                     <input type="text" class="form-control" placeholder="" value="1509APG">
                   </div>
                 </div>
-                <button type="button" class="btn btn-bule offset-sm-4 col-sm-6">Change Reservation</button>
+                    <button type="button" class="btn btn-bule offset-sm-4 col-sm-6">Change Reservation</button>
+                
+                
               </div>
             </div>
             <!-- -->
@@ -679,6 +682,34 @@
             </div>
               </div>
             </div>
+            <div class="card">
+              <div class="card-body">
+                <form>
+                  <div class="form-row align-items-center">
+                    <div class="col-4 col-md-auto col-lg col-xl-auto">
+                      <label>Audults</label>
+                    </div>
+                    <div class="col-8 col-sm-3 col-lg col-xl">
+                      <input type="text" class="form-control mb-2 mb-sm-0" id="inlineFormInput">
+                    </div>
+                    <div class="col-4 col-sm-auto col-lg col-md-auto col-xl-auto">
+                      <label>Room Type</label>
+                    </div>
+                    <div class="col-8 col-sm-3 col-lg col-xl">
+                      <div class=" mb-2 mb-sm-0" style="padding-top: 5px;" >
+                        <select id="inputState" class="form-control">
+                          <option></option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col col-sm col-lg col-xl" >
+                      <button type="submit" class="btn btn-bule btn-block">Go</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
           <!-- Cashiering -->
           <div class="col col-sm col-md col-lg col-xl-6">
@@ -737,8 +768,299 @@
           </div>
           <!-- -->
         </div>
+        
       </div>
     </div>
   
+</div>
+
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#ModelDel">
+  button delete
+</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModelSave">
+    button save
+  </button>
+  <button type="button" id="btnWizard" class="btn btn-info" data-toggle="modal" data-target="#ModelWizard">
+      button wizard
+    </button>
+<!-- Modal -->
+
+<div class="modal fade" id="ModelDel" tabindex="-1" role="dialog" aria-labelledby="ModelDelLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+  <div class="modal-dialog modal-margin-top modal-dialog-alert" role="document">
+    <div class="modal-content">
+      <div class="modal-header modal-header-alert">
+        <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button> -->
+        <div class="container">
+        <div class="row" >
+        <div class="col-sm-12 modal-header-imgcenter">
+          <img src="../../assets/image/icon_delete.png"/>
+        </div></div>
+        <div class="" >
+        <div class="col-sm-12 text-center">
+            <span class="text-center font-alert">Are you Sure?</span>
+        </div> </div></div>
+      </div>
+      <div class="modal-body modal-body-padding">
+          <div class="col-sm-12 text-center">
+              <span class="text-center">Do you want to Delete this item?</span>
+          </div>
+      </div>
+      <div class="modal-footer modal-footer-alert">
+        <div class="container">
+          <div class="row">
+              <div class="col-sm-6 text-right">
+                  <button type="button" class="btn btn-danger col btn-sm">Delete</button>
+              </div>
+              <div class="col-sm-6">
+                  <button type="button" class="btn btn-secondary col btn-sm" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  
+</div>
+ <!-- Modal -->
+    <div class="modal fade" id="ModelSave" tabindex="-1" role="dialog" aria-labelledby="ModelSaveLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+      <div class="modal-dialog modal-margin-top modal-dialog-alert" role="document">
+        <div class="modal-content">
+          <div class="modal-header modal-header-alert">
+            <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button> -->
+            <div class="container">
+            <div class="row" >
+            <div class="col-sm-12 modal-header-imgcenter">
+              <img src="../../assets/image/icon_ok.png"/>
+            </div></div>
+            <div class="" >
+            <div class="col-sm-12 text-center">
+                <span class="text-center font-save">Are you Sure?</span>
+            </div> </div></div>
+          </div>
+          <div class="modal-body modal-body-padding">
+              <div class="col-sm-12 text-center">
+                  <span class="text-center">Do you want to Save this item?</span>
+              </div>
+          </div>
+          <div class="modal-footer modal-footer-alert">
+            <div class="container">
+              <div class="row">
+                  <div class="col-sm-6 text-right">
+                      <button type="button" class="btn btn-primary btn-sm col btn-sm">Save</button>
+                  </div>
+                  <div class="col-sm-6">
+                      <button type="button" class="btn btn-secondary btn-sm col btn-sm" data-dismiss="modal">Close</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="ModelWizard" tabindex="-1" role="dialog" aria-labelledby="ModelWizardLabel"  aria-hidden="true"  data-keyboard="false" data-backdrop="static">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content bg-trans modal-wizard-width">
+          
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                    <!--      Wizard container        -->
+                    <div class="wizard-container">
+                        <div class="card wizard-card" id="wizard">
+                          <div class="">
+                            <button type="button" class="close text-right" data-dismiss="modal" aria-label="Close">
+                                <span class="padClose" aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                          <form action="" method="" novalidate="novalidate">
+                              <div class="wizard-header">
+                                  <h3 class="wizard-title">
+                                    List Your Place
+                                  </h3>
+                      <h5>This information will let us know more about your place.</h5>
+                              </div>
+                    <div class="wizard-navigation">
+                      <ul class="nav nav-pills">
+                                      <li class="active" style="width: 25%;"><a aria-expanded="true" href="#location" data-toggle="tab">Location</a></li>
+                                      <li style="width: 25%;"><a aria-expanded="false" href="#type" data-toggle="tab">Type</a></li>
+                                      <li style="width: 25%;"><a aria-expanded="false" href="#facilities" data-toggle="tab">Facilities</a></li>
+                                      <li style="width: 25%;"><a aria-expanded="false" href="#description" data-toggle="tab">Description</a></li>
+                                  </ul>
+                    <div class="moving-tab" style="transition:transform; width: 187.5px; transform: translate3d(-8px, 0px, 0px);">Location</div></div>
+          
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="location">
+                                      <div class="row">
+                                          <div class="col-sm-12">
+                                              <h4 class="info-text"> Let's start with the basic details</h4>
+                                          </div>
+                                          <div class="col-sm-5 col-sm-offset-1">
+                                              <div class="form-group label-floating is-empty">
+                                                  <label class="control-label">City</label>
+                                                  <input class="form-control" id="exampleInputEmail1" type="text">
+                                              <span class="material-input"></span></div>
+                                          </div>
+                                          <div class="col-sm-5">
+                                              <div class="form-group label-floating is-empty">
+                                                    <label class="control-label">Country</label>
+                                                    <select name="country" class="form-control">
+                                                        <option disabled="" selected=""></option>
+                                                        <option value="Afghanistan"> Afghanistan </option>
+                                                        <option value="Albania"> Albania </option>
+                                                        <option value="Algeria"> Algeria </option>
+                                                        <option value="American Samoa"> American Samoa </option>
+                                                        <option value="Andorra"> Andorra </option>
+                                                        <option value="Angola"> Angola </option>
+                                                        <option value="Anguilla"> Anguilla </option>
+                                                        <option value="Antarctica"> Antarctica </option>
+                                                        <option value="...">...</option>
+                                                    </select>
+                                                <span class="material-input"></span></div>
+                                          </div>
+                                          <div class="col-sm-5 col-sm-offset-1">
+                                              <div class="form-group label-floating is-empty">
+                                                  <label class="control-label">Accommodates</label>
+                                                  <select class="form-control">
+                                                      <option disabled="" selected=""></option>
+                                                      <option>1 Person</option>
+                                                      <option>2 Persons </option>
+                                                      <option>3 Persons</option>
+                                                      <option>4 Persons</option>
+                                                      <option>5 Persons</option>
+                                                      <option>6+ Persons</option>
+                                                  </select>
+                                              <span class="material-input"></span></div>
+                                          </div>
+                                          <div class="col-sm-5">
+                                              <div class="form-group label-floating is-empty">
+                                                  <label class="control-label">Rent price</label>
+                                                  <div class="input-group">
+                                                      <input class="form-control" type="text">
+                                                      <span class="input-group-addon">$</span>
+                                                  </div>
+                                              <span class="material-input"></span></div>
+                                          </div>
+                                      </div>
+                                    </div>
+                                    <div class="tab-pane" id="type">
+                                        <h4 class="info-text">What type of location do you have? </h4>
+                                        <div class="row">
+                                            <div class="col-sm-10 col-sm-offset-1">
+                                                <div class="col-sm-4 col-sm-offset-2">
+                                                    <div title="" class="choice" data-original-title="Select this option if you have a house." data-toggle="wizard-radio" rel="tooltip">
+                                                        <input name="type" type="radio" value="House">
+                                                        <div class="icon">
+                                                            <i class="material-icons">home</i>
+                                                        </div>
+                                                        <h6>House</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div title="" class="choice" data-original-title="Select this option if you have an appartment" data-toggle="wizard-radio" rel="tooltip">
+                                                        <input name="type" type="radio" value="Appartment">
+                                                        <div class="icon">
+                                                            <i class="material-icons">hotel</i>
+                                                        </div>
+                                                        <h6>Appartment</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="facilities">
+                                        <h4 class="info-text">Tell us more about facilities. </h4>
+                                        <div class="row">
+                                            <div class="col-sm-5 col-sm-offset-1">
+                                              <div class="form-group label-floating is-empty">
+                                                  <label class="control-label">Your place is good for</label>
+                                                  <select class="form-control">
+                                                      <option disabled="" selected=""></option>
+                                                      <option>Business</option>
+                                                      <option>Vacation </option>
+                                                      <option>Work</option>
+                                                  </select>
+                                              <span class="material-input"></span></div>
+                                            </div>
+                                            <div class="col-sm-5">
+                                              <div class="form-group label-floating is-empty">
+                                                  <label class="control-label">Is air conditioning included ?</label>
+                                                  <select class="form-control">
+                                                      <option disabled="" selected=""></option>
+                                                      <option>Yes</option>
+                                                      <option>No </option>
+                                                  </select>
+                                              <span class="material-input"></span></div>
+                                            </div>
+                                            <div class="col-sm-5 col-sm-offset-1">
+                                              <div class="form-group label-floating is-empty">
+                                                  <label class="control-label">Does your place have wi-fi?</label>
+                                                  <select class="form-control">
+                                                  <option disabled="" selected=""></option>
+                                                      <option>Yes</option>
+                                                      <option>No </option>
+                                                  </select>
+                                              <span class="material-input"></span></div>
+                                            </div>
+                                            <div class="col-sm-5">
+                                              <div class="form-group label-floating is-empty">
+                                                  <label class="control-label">Is breakfast included?</label>
+                                                  <select class="form-control">
+                                                      <option disabled="" selected=""></option>
+                                                      <option>Yes</option>
+                                                      <option>No </option>
+                                                  </select>
+                                              <span class="material-input"></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="description">
+                                        <div class="row">
+                                            <h4 class="info-text"> Drop us a small description. </h4>
+                                            <div class="col-sm-6 col-sm-offset-1">
+                                                <div class="form-group label-floating is-empty">
+                                                    <label class="control-label">Place description</label>
+                                                    <textarea class="form-control" placeholder="" rows="9"></textarea>
+                                                <span class="material-input"></span></div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                              <div class="form-group label-floating">
+                                                    <label class="control-label">Example</label>
+                                                    <p class="description">"The place is really nice. We use it every sunday when we go fishing. It is so awesome."</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wizard-footer">
+                                    <div class="pull-right">
+                                          <input name="next" class="btn btn-next btn-fill btn-primary btn-wd" type="button" value="Next"><div class="ripple-container"><div class="ripple ripple-on ripple-out" style="left: 786px; top: 418px; transform: scale(17.5); background-color: rgb(255, 255, 255);"></div></div>
+                                          <input name="finish" class="btn btn-finish btn-fill btn-primary btn-wd" style="display: none;" type="button" value="Finish">
+                                      </div>
+                                      <div class="pull-left">
+                                          <input name="previous" class="btn btn-previous btn-gray btn-fill btn-default btn-wd disabled" type="button" value="Previous"><div class="ripple-container"><div class="ripple ripple-on ripple-out" style="left: 374px; top: 436px; transform: scale(17.5); background-color: rgb(255, 255, 255);"></div><div class="ripple ripple-on ripple-out" style="left: 374px; top: 439px; transform: scale(17.5); background-color: rgb(255, 255, 255);"></div></div>
+                                      </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                          </form>
+                        </div>
+                    </div> <!-- wizard container -->
+              </div> <!-- row -->
+          </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    
+    

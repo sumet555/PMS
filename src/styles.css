@@ -1,5 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+/* thai */
+@font-face {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Prompt'), local('Prompt-Regular'), url(./assets/font/Pridi-Regular.woff2) format('woff2');
+    unicode-range: U+0E01-0E5B, U+200B-200D, U+25CC;
+  }
 
+  /* vietnamese */
+  @font-face {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Prompt'), local('Prompt-Regular'), url(https://fonts.gstatic.com/s/prompt/v2/IxmUoSq3Eq8xdl9we0o_QPesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Prompt'), local('Prompt-Regular'), url(https://fonts.gstatic.com/s/prompt/v2/O_NrGbgzuFKyAg9JXutx2_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Prompt'), local('Prompt-Regular'), url(https://fonts.gstatic.com/s/prompt/v2/so624u2w562OaE2DHdX71g.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  }
+
+/* You can add global styles to this file, and also import other style files */
+.body{
+    padding-left: 1.5%;
+}
+.layout{
+    border: 1px solid #d2dae8;
+    background-color: #ffffff;
+}
+.btn{
+    margin: 2px;
+}
 .btn-bule{
     background-color: #1976d2;
     color: #ffffff;
@@ -27,6 +70,17 @@
     background-color: #737373;
     color: #ffffff;
 }
+input.form-check-input{
+    background-color: #5bc0de;
+    border-color: #5bc0de; 
+    
+}
+/* .checkbox-info input[type="checkbox"]:checked + label::before {
+    background-color: #5bc0de;
+    border-color: #5bc0de; 
+}
+.checkbox-info input[type="checkbox"]:checked + label::after {
+    color: #fff; } */
 .row{
     width: 100%;
     font-family: 'Prompt', sans-serif;
@@ -52,17 +106,36 @@ div .card{
 th{
     color: 	#293b5a;
 }
-.form-control{
+.form-control, .input-group {
     /* margin-top: 3px; */
     margin-bottom: 6px;
     font-size: 14px;
     color: #595959;
 }
+input.form-control.c-gray{
+    background-color: #f5f5f5;
+    border: 1px solid #d2d2d2;
+    
+   }
+
 input.form-control{
     border: 1px solid #d2dae8;
+    
 }
-select#inputState.form-control{
+
+   select#inputState.form-control{
     border: 1px solid #d2dae8;
+}
+input.form-control.checkbox{
+    border: 1px solid #d2dae8;
+    background-color: #ffffff;
+    font-size: 50px;
+}
+input.form-control.textbox-h{
+    border: 1px solid #d2dae8;
+    background-color: #eaeffe;
+    color: #42639b;
+    text-align: center;
 }
 /* tbody{
     border-top: 1px solid #d2dae8;
@@ -80,6 +153,25 @@ label, .label{
     font-size: 14px;
     margin-top: 6px;
     /* margin-bottom: 3px; */
+}
+.box-h{
+    margin: 0px;
+    text-align: center;
+}
+.l-left{
+    position: absolute;
+    padding-right: 0px;
+}
+/* div.col.pd-r{
+    padding-right: 10px;
+} */
+li{
+    font-size: 14px;
+    text-align: right;
+}
+.label-f{
+    color: 	#42639b;
+    font-weight: bold;
 }
 .Tile{
     font-size: 26px;
@@ -133,3 +225,49 @@ label, .label{
     padding-top: 7px;
 
 }
+.img-i{
+    widows: 20px;
+    height: 18px;
+}
+
+span.custom-control-indicator {
+    border: 0.6px solid #d2dae8;
+    position: absolute;
+    top: 1px;
+    background-color: #ffffff;
+}
+
+.form-1{
+    margin-left: 15px;
+    margin-right: -15px;
+}
+.card-title.d-xs-block.d-xl-none.title-sx-h{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.form-group.offset-1.col-11.offset-xl-1.col-xl-11{
+    padding-left: 0px;
+    /* margin-right: 0px; */
+}
+.col-12.col-sm-1.label{
+    padding-left: 0px;
+}
+
+@font-face {
+    font-family: 'Pridi';
+    font-style: normal;
+    font-weight: 400;
+    /* src: local('Pridi Regular'), local('Pridi-Regular'), url(https://fonts.gstatic.com/s/pridi/v3/FgsbmNquVcdu7aD2x3tOtA.woff2) format('woff2'); */
+    src:url('./assets/font/Pridi.woff2') format('woff2');
+    unicode-range: U+0E01-0E5B, U+200B-200D, U+25CC;
+  }
+  /* input.form-control {
+      font-family: 'Pridi';
+  } */
+  .fixed-top{
+      left:90px;
+  }
+  .padClose{
+    padding-right: 20px;
+    font-size: 2.5rem;
+  }

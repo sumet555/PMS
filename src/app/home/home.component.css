@@ -6,6 +6,7 @@
     border: 1px solid #ddd;
 }
 .padding-menu{
+    margin-right: auto;
     padding-right: 20px;
     padding-left: 20px;
 }
@@ -42,11 +43,12 @@ a, a:hover, a:focus {
 }
 
 .navbar {
+    
     padding: 15px 10px;
     background: #fff;
     border: none;
     border-radius: 0;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -73,48 +75,56 @@ a, a:hover, a:focus {
     align-items: stretch;
 }
 
-#sidebar {
+#sidebar1 {
     min-width: 90px;
     max-width: 90px;
     background: #10264d;
     color: #fff;
     transition: all 0.3s;
+    position: fixed;
+    z-index: 1030;
+    height: 100vh;
+}.left{
+    margin-left: 90px;
 }
 
-#sidebar.active {
+#sidebar1.active {
     margin-left: -90px;
 }
 
-#sidebar .sidebar-header {
+#sidebar1 .sidebar-header {
     padding: 10px;
     background: #091a37;
 }
 
-#sidebar ul.components {
+#sidebar1 ul.components {
     padding: 20px 0;
     /* border-bottom: 1px solid #47748b; */
 }
 
-#sidebar ul p {
+#sidebar1 ul p {
     color: #fff;
     padding: 10px;
 }
 
-#sidebar ul li a {
+#sidebar1 ul li a {
     padding: 10px;
     font-size: 1.1em;
     display: block;
 }
-#sidebar ul li a:hover {
+#sidebar1 ul li a:hover {
     color: #7386D5;
     background: #fff;
 }
 
-#sidebar ul li.active > a, a[aria-expanded="true"] {
+#sidebar1 ul li.active > a, a[aria-expanded="true"] {
     color: #fff;
-    background: #6d7fcc;
+    /* background: #6d7fcc; */
 }
-
+.rowActive{
+    padding-left:90px;
+    /* padding-top: 100px; */
+}
 
 a[data-toggle="collapse"] {
     position: relative;
@@ -136,7 +146,7 @@ a[aria-expanded="true"]::before {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #6d7fcc;
+    /* background: #6d7fcc; */
 }
 
 ul.CTAs {
@@ -177,24 +187,44 @@ a.article, a.article:hover {
     MEDIAQUERIES
 ----------------------------------------------------- */
 @media (max-width: 768px) {
-    #sidebar {
-        margin-left: -250px;
+    #sidebar1 {
+        margin-left: 0px;
     }
-    #sidebar.active {
+    #sidebar1.active {
         margin-left: 0;
     }
-    #sidebarCollapse span {
+    /* #sidebarCollapse span {
         display: none;
-    }
+    } */
 }
 
-
-
-
-
-
-
-
+#submenu {
+    background-color: #e7e7e7;
+    margin-bottom:20px;
+    margin-left: 90px;
+    }
+  
+    .collapsing {
+      display:none;
+    }
+  
+    .nav-justified .nav-justified:before {
+      content: '';
+      width: 0px;
+      height: 0px;
+      display: inline-block;
+      vertical-align: middle;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #f9f9f9;
+      position: absolute;
+      top: -10px;
+      right: 0;
+      left: 0;
+      bottom: 0;
+  margin: 0 auto;
+  }
+  
 
 
 

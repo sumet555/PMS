@@ -21,18 +21,30 @@
       "styles": [
         "styles.css",
         "../node_modules/bootstrap/dist/css/bootstrap.css",
+        "../src/assets/css/submenu.css",
         "../src/assets/open-iconic/font/css/open-iconic-bootstrap.css",
-        "../src/assets/css/monthly.css"
+        "../src/assets/css/monthly.css",
+        "../src/assets/bootstrap-datepicker/css/bootstrap-datepicker.css",
+        "../src/assets/css/material-bootstrap-wizard.css",
+        "../src/assets/css/themify-icons.css"
       ],
       "scripts": [
-        "../node_modules/jquery/dist/jquery.min.js",
+        "../src/assets/js/jquery.js",
         "../src/assets/js/popper.js",
+        "../src/assets/js/bootstrap.js",
         "../node_modules/bootstrap/dist/js/bootstrap.min.js",
         "../src/assets/js/menu.js",
         
         "../src/assets/js/monthly.js",
-        "../src/assets/js/calendar.js"
-         
+        "../src/assets/js/calendar.js",
+
+        "../src/assets/bootstrap-datepicker/js/bootstrap-datepicker.min.js",
+        "../src/assets/js/datepicker.js",
+
+        
+        "../src/assets/js/jquery.validate.min.js",
+        "../src/assets/js/material-bootstrap-wizard.js",
+        "../src/assets/js/jquery.bootstrap.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

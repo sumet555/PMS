@@ -1,6 +1,6 @@
 <div class="wrapper">
     <!-- Sidebar Holder -->
-    <nav id="sidebar">
+    <nav id="sidebar1">
         <div class="sidebar-header center">
             <img src="../assets/image/logoPMS (2).png" alt="">
 
@@ -56,9 +56,9 @@
 
     <!-- Page Content Holder -->
     <div id="content">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg fixed-top left">
             <a id="sidebarCollapse" class="navbar-brand padding-menu"><span class="oi oi-menu"></span></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebar" aria-controls="sidebar" aria-expanded="false"
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebar1" aria-controls="sidebar" aria-expanded="false"
                 aria-label="Toggle navigation">
              <span class="navbar-toggler-icon"></span>
            </button>
@@ -66,17 +66,23 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto ">
                     <li class="nav-item active padding-menu">
-                        <a class="nav-link center" routerLink="/reservation" href="#"> 
+                        <a class="nav-link center"  href="#" data-toggle="collapse"  data-target="#one"> 
                   <img src="../assets/image/i_reservation.png" alt="" >
                      <div class="font-menu1">Reservation</div>
                    <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item padding-menu">
+                            <a class="nav-link center" href="#" data-toggle="collapse"  data-target="#two">
+                            <img src="../assets/image/i_fontdesk.png"  alt="">
+                            <div class="font-menu1">Front Desk</div>
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item padding-menu">
                         <a class="nav-link center" href="#">
                      <img src="../assets/image/i_fontdesk.png"  alt="">
                      <div class="font-menu1">Front Desk</div>
                  </a>
-                    </li>
+                    </li> -->
                     <li class="nav-item padding-menu">
                         <a class="nav-link center" href="#">
                    <img src="../assets/image/i_cashiering.png"  alt="" >
@@ -109,6 +115,12 @@
                     </li>
                     <li class="nav-item padding-menu">
                         <a class="nav-link center" href="#">
+                       <img src="../assets/image/i_utilities.png"  alt="" >
+                       <div class="font-menu1">Utilities</div>
+                   </a>
+                    </li>
+                    <li class="nav-item padding-menu">
+                        <a class="nav-link center" href="#">
                    <img src="../assets/image/i_Exit.png"  alt="" >
                    <div class="font-menu1">Exit</div>
                </a>
@@ -117,8 +129,48 @@
             </div>
 
         </nav>
-
-        <router-outlet></router-outlet>
+        <div >
+            <nav id="submenu">
+              <ul class="nav nav-justified">
+                <li>
+                  <ul class="nav nav-justified collapse" id="one">
+                    <li><a href="#" id="" routerLink="/reservation" >Reservation</a></li>
+                    <li><a href="#" id="" routerLink="/reservation2" >Reservation 2</a></li>
+                    <li><a href="#" id="" routerLink="/individual" >Individual</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="nav nav-justified collapse" id="two">
+                    <li><a href="#" id="">Two sub 1</a></li>
+                    <li><a href="#" id="">Two sub 2</a></li>
+                    <li><a href="#" id="">Two sub 3</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="nav nav-justified collapse" id="three">
+                    <li><a href="#" id="">Three sub 1</a></li>
+                    <li><a href="#" id="">Three sub 2</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="nav nav-justified collapse" id="four">
+                    <li><a href="#" id="">Four sub 1</a></li>
+                    <li><a href="#" id="">Four sub 2</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="nav nav-justified collapse" id="five">
+                    <li><a href="#" id="">Link</a></li>
+                    <li><a href="#" id="">Link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+        </div>
         
+        <div class="rowActive">
+            <router-outlet></router-outlet>
+        </div>
     </div>
-    </div>
+</div>
+

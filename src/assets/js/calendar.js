@@ -5,7 +5,6 @@ $(document).ready(function () {
 // $(window).load( function() {
 
 
-
 // });
 // jQuery(document).load(
 //     function ($) {
@@ -39,3 +38,4 @@ $(document).ready(function () {
 //                 }
 //             });
 //     });
+
