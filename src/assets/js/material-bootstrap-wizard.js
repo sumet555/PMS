@@ -75,9 +75,9 @@ $(document).ready(function () {
             refreshAnimation($wizard, index);
 
             $('.moving-tab').css('transition', 'transform 0s');
-            firstLoad = true;
+            // firstLoad = true;
         },
-       
+
         onTabClick: function (tab, navigation, index) {
             var $valid = $('.wizard-card form').valid();
 
@@ -123,11 +123,10 @@ $(document).ready(function () {
                 });
             }
             refreshAnimation($wizard, index);
-            if(firstLoad)
-            {
-                firstLoad=false;
-                $wizard.find('.moving-tab').css('width', '159.5px');
-            }
+            // if (firstLoad) {
+            //     firstLoad = false;
+            //     $wizard.find('.moving-tab').css('width', '159.5px');
+            // }
 
 
         }
@@ -141,24 +140,21 @@ $(document).ready(function () {
     });
 
     $("#btnWizard").click(function () {
-            //check number of tabs and fill the entire row
-            $('.wizard-card').each(function(){
+        //check number of tabs and fill the entire row
+        $('#ModelWizard').on('shown.bs.modal', function () {
+            $('.wizard-card').each(function () {
                 $wizard = $(this);
                 index = $wizard.bootstrapWizard('currentIndex');
 
                 refreshAnimation($wizard, index);
-        
+
                 $('.moving-tab').css({
                     'transition': 'transform 0s'
                 });
-                // //firstLoad=true;
-                // if(index==1)
-                // {
-                     $wizard.find('.moving-tab').css('width', '159.5px');
-                // }
             });
+        });
     });
-    
+
     $('[data-toggle="wizard-radio"]').click(function () {
         wizard = $(this).closest('.wizard-card');
         wizard.find('[data-toggle="wizard-radio"]').removeClass('active');
@@ -196,22 +192,20 @@ function readURL(input) {
     }
 }
 
-// $(window).resize(function(){
-//     $('.wizard-card').each(function(){
-//         $wizard = $(this);
-//         index = $wizard.bootstrapWizard('currentIndex');
-//         refreshAnimation($wizard, index);
+$(window).resize(function(){
+    $('#ModelWizard').on('shown.bs.modal', function () {
+        $('.wizard-card').each(function () {
+            $wizard = $(this);
+            index = $wizard.bootstrapWizard('currentIndex');
 
-//         $('.moving-tab').css({
-//             'transition': 'transform 0s'
-//         });
-//         //firstLoad=true;
-//         if(index==1)
-//         {
-//             $wizard.find('.moving-tab').css('width', '159.5px');
-//         }
-//     });
-// });
+            refreshAnimation($wizard, index);
+
+            $('.moving-tab').css({
+                'transition': 'transform 0s'
+            });
+        });
+    });
+});
 function refreshAnimation($wizard, index) {
     $total = $wizard.find('.nav li').length;
     $li_width = 100 / $total;
