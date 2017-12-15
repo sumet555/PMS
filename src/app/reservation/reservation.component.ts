@@ -77,6 +77,6 @@ export class ReservationComponent implements OnInit,AfterViewInit {
  
   ngAfterViewInit() {
    $.getScript('../assets/js/calendar.js');
-   $.getScript('../assets/js/material-bootstrap-wizard.js');
+  //  $.getScript('../assets/js/material-bootstrap-wizard.js');
   }
 }

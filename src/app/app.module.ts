@@ -8,6 +8,7 @@ import { ReservationComponent } from './reservation/reservation.component';
 import { Test1Component } from './test1/test1.component';
 import { Reservation2Component } from './reservation2/reservation2.component';
 import { IndividualComponent } from './individual/individual.component';
+import { ModalwizardComponent } from './modalwizard/modalwizard.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { IndividualComponent } from './individual/individual.component';
     ReservationComponent,
     Test1Component,
     Reservation2Component,
-    IndividualComponent
+    IndividualComponent,
+    ModalwizardComponent
   ],
   imports: [
     BrowserModule,

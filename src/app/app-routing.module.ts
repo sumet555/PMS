@@ -4,6 +4,7 @@ import{ HomeComponent} from './home/home.component';
 import{ ReservationComponent} from './reservation/reservation.component';
 import{ Reservation2Component} from './reservation2/reservation2.component';
 import{ IndividualComponent} from './individual/individual.component';
+import{ ModalwizardComponent} from './modalwizard/modalwizard.component';
 import{ Test1Component} from './test1/test1.component';
 const routes: Routes = [
   {
@@ -17,6 +18,8 @@ const routes: Routes = [
       path:'reservation2',component:Reservation2Component
     },{
       path:'individual',component:IndividualComponent
+    },{
+      path:'modalwizard',component:ModalwizardComponent
     }
   ]
   }, {

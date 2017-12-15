@@ -25,14 +25,15 @@
         "../src/assets/open-iconic/font/css/open-iconic-bootstrap.css",
         "../src/assets/css/monthly.css",
         "../src/assets/bootstrap-datepicker/css/bootstrap-datepicker.css",
-        "../src/assets/css/material-bootstrap-wizard.css",
+
+        "../src/assets/css/paper-bootstrap-wizard.css",
         "../src/assets/css/themify-icons.css"
       ],
       "scripts": [
         "../src/assets/js/jquery.js",
         "../src/assets/js/popper.js",
-        "../src/assets/js/bootstrap.js",
-        "../node_modules/bootstrap/dist/js/bootstrap.min.js",
+         "../node_modules/bootstrap/dist/js/bootstrap.min.js",
+         "../src/assets/js/bootstrap.js",
         "../src/assets/js/menu.js",
         
         "../src/assets/js/monthly.js",
@@ -40,10 +41,9 @@
         "../src/assets/bootstrap-datepicker/js/bootstrap-datepicker.min.js",
         "../src/assets/js/datepicker.js",
 
-        
         "../src/assets/js/jquery.validate.min.js",
-        "../src/assets/js/material-bootstrap-wizard.js",
-        "../src/assets/js/jquery.bootstrap.js"
+        "../src/assets/js/paper-bootstrap-wizard.js",
+        "../src/assets/js/jquery.bootstrap.wizard.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
