@@ -16,21 +16,40 @@ $(document).ready(function () {
             $('#submenu').css('margin-left', '0px');
         }
     });
-
+    // $('#submenu').on('click', function () {
+    //     // $('.submenu1').toggleClass('active');
+    //     $('.nav.nav-justified.collapse.in.li').toggleClass('active');
+    //     alert('active');
+    // });
  
 });
+
 
 $(document).ready(function () {
     
             $('.collapse').on('shown.bs.collapse', function (e) {
                 $('.collapse').not(this).removeClass('in');
+                // alert($('[data-toggle=collapse]').parent('li.a').find(id));
+                //  if($('[data-toggle=collapse]').parent('li.a').find('aria-expanded','false')){
+                    //  alert('a');
+                    //  $('.collapse').not(this).addClass('active');
+                    //  $('[data-toggle=collapse]').parent('li.a').find('aria-expanded','false').addClass('active');
+                //  }
             });
     
             $('[data-toggle=collapse]').click(function (e) {
                 $('[data-toggle=collapse]').parent('li').removeClass('active');
                 $(this).parent('li').toggleClass('active');
+                // if($('[data-toggle=collapse]').parent('li').hasClass('active')) {
+                //     $('[data-toggle=collapse]').parent('li').removeClass('active');
+                // }
+               
             });
     
+            $('[data-toggle=collapsesub]').click(function (e) {
+                $('[data-toggle=collapsesub]').parent('li').removeClass('active');
+                $(this).parent('li').toggleClass('active');
+            });
         });
 
 

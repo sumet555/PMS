@@ -75,6 +75,12 @@ input.form-check-input{
     border-color: #5bc0de; 
     
 }
+.btn-grid{
+    color: #ffffff;
+}
+button.btn.btn-sm.btn-block.btn-grid{
+    line-height: 1.2;
+}
 /* .checkbox-info input[type="checkbox"]:checked + label::before {
     background-color: #5bc0de;
     border-color: #5bc0de; 
