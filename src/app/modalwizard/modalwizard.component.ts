@@ -13,5 +13,7 @@ export class ModalwizardComponent implements OnInit,AfterViewInit {
   }
   ngAfterViewInit() {
      $.getScript('../assets/js/paper-bootstrap-wizard.js');
+     $.getScript('../assets/js/bootstrap.js');
+     
    }
 }

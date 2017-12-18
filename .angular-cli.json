@@ -32,8 +32,9 @@
       "scripts": [
         "../src/assets/js/jquery.js",
         "../src/assets/js/popper.js",
+        "../src/assets/js/bootstrap.js",
          "../node_modules/bootstrap/dist/js/bootstrap.min.js",
-         "../src/assets/js/bootstrap.js",
+         
         "../src/assets/js/menu.js",
         
         "../src/assets/js/monthly.js",
